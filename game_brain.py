@@ -29,9 +29,9 @@ class GameBrain:
 
     def get_secret_word(self):
         """Select a secret word for game play"""
-        # random.seed(42)  # For testing
+        # random.seed(42)  # For testing -keep the same word list
         self.secret_word = random.choice(self.words)
-        print(f'\t***{self.secret_word}***')  # For testing
+        # print(f'\t***{self.secret_word}***')  # For testing -reveal the secret word
 
     def check_word(self, word_list):
         """Check if word is in word list. Return none if user quits, true if word is in wordlist and false if not"""
